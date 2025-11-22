@@ -1,0 +1,9 @@
+pandas
+numpy
+spacy
+scikit-learn
+gensim
+matplotlib
+seaborn
+pyLDAvis
+jupyter
