@@ -12,10 +12,13 @@ NLP-Complaints-Analysis
 ├── 📁 data
 │   └── 📄 complaints_sample.csv              # Sample complaint data (single column: 'complaint_text')
 ├── 📁 notebooks
-│   ├── ⚙️ .gitignore
 │   └── 📄 01_nlp_complaints_analysis.ipynb   # Main analysis notebook with all code/results
 ├── 📁 results
-│   └── 🌐 lda_topic_visualization.html       # pyLDAvis LDA topic visualization output 
+│   └── 🌐 lda_topic_visualization.html       # pyLDAvis LDA topic visualization output
+├── 📁 result_screenshots
+│   ├── 🖼️ Figure_1_LDA_Topic_Distance_Map.png
+│   ├── 🖼️ Figure_2_LDA_Topic_1_Terms.png
+│   └── 🖼️ Figure_3_LDA_Topic_2_Terms.png
 ├── 📝 README.md
 ├── 📄 requirements.txt                       # All required packages
 └── ⚙️ .gitignore
@@ -28,7 +31,7 @@ NLP-Complaints-Analysis
 ### 1. Clone the Repository and Position Yourself
 
 ```
-git clone https://github.com/<your-username>/NLP-Complaints-Analysis.git
+git clone https://github.com/husain-barot-786/NLP-Complaints-Analysis
 cd NLP-Complaints-Analysis
 ```
 
@@ -61,7 +64,7 @@ pip install -r requirements.txt
 
 ```
 pip install spacy
-pip show spacy # Verify installation
+pip show spacy        # Verify installation
 ```
 
 - Download the English language model:
@@ -77,15 +80,13 @@ python -m spacy download en_core_web_sm
 - Open VS Code in your project folder.
 - Open the notebook located at `notebooks/01_nlp_complaints_analysis.ipynb`.
 - Make sure the top-right kernel/interpreter matches the Python from your `venv` folder
-(`<your-project-folder>/venv/Scripts/python.exe` on Windows, or `venv/bin/python` on Mac/Linux).
+(`NLP-Complaints-Analysis/venv/Scripts/python.exe` on Windows, or `venv/bin/python` on Mac/Linux).
 
 ---
 
 ### 6. Run the Jupyter Notebook
 
-- Either start Jupyter with jupyter notebook, and open in your browser,
-
-- Or use the built-in Jupyter Notebook interface in VS Code (`.ipynb` file).
+- Start Jupyter with `jupyter notebook`or use VS Code’s built-in notebook support.
 
 - **Run all cells** sequentially to process data, perform NLP, and generate results.
 
@@ -101,32 +102,38 @@ results/lda_topic_visualization.html
 
 - Open this file in any web browser to explore identified topics and their salient terms.
 
+- **Screenshots of key result views** have been provided for easy reference:
+
+- `result_screenshots/Figure_1_LDA_Topic_Distance_Map.png`: Intertopic Distance Map and overview of topics
+- `result_screenshots/Figure_2_LDA_Topic_1_Terms.png`: Top relevant terms for Topic 1
+- `result_screenshots/Figure_3_LDA_Topic_2_Terms.png`: Top relevant terms for Topic 2
+
 ---
 
 ## 📄 Files Delivered for Assessment
 
 - `notebooks/01_nlp_complaints_analysis.ipynb` — Jupyter Notebook with all code, outputs, and markdown explanations.
 
-- `data/complaints_sample.csv` — Sample dataset.
+- `data/complaints_sample.csv` — Sample dataset of municipal complaints.
 
-- `results/lda_topic_visualization.html` — Interactive visualization for academic inspection.
+- `results/lda_topic_visualization.html` — Interactive LDA visualization for academic inspection.
+
+- `result_screenshots/` — Key result images for rapid assessment and documentation.
 
 ---
 
 ## ℹ️ Additional Notes
 
 - Modify `data/complaints_sample.csv` to use your own municipal complaint data as needed.
-- For reproducibility, all dependencies are listed in `requirements.txt`.
 - If you experience environment/interpreter issues in Jupyter, ensure you re-select the correct `venv` in the notebook kernel picker, as described above.
+- Datasets and screenshots included are for demonstration; replace or expand with your real municipal data as needed.
+- All dependencies are listed in `requirements.txt` for full reproducibility.
+- If Jupyter gives environment errors, confirm you’re using the correct venv in the notebook kernel picker.
 
 ---
 
 ## 📬 Contact
 
-For questions or troubleshooting, contact [your-email@domain.com] or raise an issue in the repository.
-
----
-
-**This README and repository are fully ready and compliant with university data analysis portfolio standards.**
+For questions or troubleshooting, contact `husain7083078653@gmail.com` or raise an issue in the repository.
 
 ---
